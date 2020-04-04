@@ -4,6 +4,25 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logo-nav/blob/master/LICENSE)
  */
 
+/*
+Carousel styling for Illusions section
+*/
+ .carousel-inner{
+	width:100%; 
+}
+.carousel-item  img {
+	margin:auto;
+	max-height: 400px;
+}
+.carousel { 
+	background-color: grey; 
+}
+.carousel-item {
+	text-align:center;
+	max-height: 400px;
+}
+
+
 body {
   padding-top: 54px;
 }
