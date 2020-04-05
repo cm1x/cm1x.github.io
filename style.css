@@ -46,12 +46,14 @@ Carousel styling for Illusions section
 
 .puzzles{
 	width: 100%;
-	height: 600px;
 	text-align: center;
 }
 
 .puzzels img {
 	width:100%;
+	height:auto;
+	max-width: 800px;
+
 }
 
 body {
