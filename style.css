@@ -12,16 +12,47 @@ Carousel styling for Illusions section
 }
 .carousel-item  img {
 	margin:auto;
-	max-height: 400px;
+	height: 400px;
+	bottom: -20px;
 }
+/*
 .carousel { 
 	background-color: grey; 
 }
+*/
+
 .carousel-item {
 	text-align:center;
 	max-height: 400px;
 }
+.carousel-indicator {
+	bottom:-60px;
+}
+.carousel-indicators li{
+	background-color: lightgrey;
+}
+.carousel-indicators .active{
+    background-color: darkgrey;
+}
 
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(50%);
+}
+
+#carousel-illusions, #carousel-images, #carousel-impossible{
+	height: 450px;
+}
+
+.puzzles{
+	width: 100%;
+	height: 600px;
+	text-align: center;
+}
+
+.puzzels img {
+	width:100%;
+}
 
 body {
   padding-top: 54px;

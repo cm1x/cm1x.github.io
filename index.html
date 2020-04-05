@@ -3,14 +3,12 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>Chris Meek</title>
 
   <link rel="icon" type="image/png" href="static/images/favicon.png" />
-  <link href="style.css" rel="stylesheet">
   <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="css/academicons/css/academicons.min.css" rel="stylesheet">
 
@@ -23,6 +21,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
+  <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -42,15 +41,21 @@
           <a class="nav-link" href="#about">About</a>
         </li> -->
         <li class="nav-item">
-            <a class="nav-link" href="#projects"><i class="fa fa-flask" aria-hidden="true"></i> Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#illusions"><i class="fa fa-book" aria-hidden="true"></i> Illusions</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#photos"><i class="fa fa-camera-retro" aria-hidden="true"></i> Photos</a>
-          </li>
-        </ul>
+          <a class="nav-link" href="#impossible"><i class="fa fa-flask" aria-hidden="true"></i> Impossible Things</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#puzzles"><i class="fa fa-puzzle-piece" aria-hidden="true"></i></i> Puzzles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#illusions"><i class="fa fa-book" aria-hidden="true"></i> Illusions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#images"><i class="fa fa-image"></i> Images</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#photos"><i class="fa fa-camera-retro" aria-hidden="true"></i> Photos</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
@@ -60,11 +65,11 @@
   <div id="about" class="contentDiv">
     <div class="row">
       <div class="col-lg-3" align="middle">
-        <img src="static/images/favicon.png" class="img-responsive">
+        <img src="static/images/favicon.png" class="img-responsive" height="200px">
       </div>
       <div class="col-lg-9">
         <div style="margin-top:2.5%" align="justify">
-          I like carrots!
+          I like carrots! I like other stuff too. <a href="https://www.microsoft.com/en-us/research/people/meek/">Here</a> is another page about me. Below are a few other things that amuse me.
         </div>
         <div class="d-flex ontheweb">
           <a href="https://github.com/cm1x" target="blank" title="Github Profile"><i class="fa fa-github" style="font-size:20px;"></i></a>
@@ -76,37 +81,160 @@
       </div>
     </div>
   </div>
-  <div id="projects" class="contentDiv">
+  <div id="impossible" class="contentDiv">
     <hr style="border:1px solid ;">
-    <h3 align="center"><i class="fa fa-flask" aria-hidden="true"></i> Projects</h3>
-    <ul><li>TBD</li></ul>
+    <h3 align="center"><i class="fa fa-flask" aria-hidden="true"></i> Impossible Things</h3>
+    <div id="carousel-impossible" class="carousel slide" data-ride="carousel">
+
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-impossible" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-impossible" data-slide-to="1"></li>
+        <li data-target="#carousel-impossible" data-slide-to="2"></li>
+        <li data-target="#carousel-impossible" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="static/images/trompe/columns.jpg" alt="Columns" title="Columns or ?">
+        </div>
+        <div class="carousel-item">
+          <img src="static/images/trompe/Esher-like.jpg" alt="Esher like world" title="Esher construction project.">
+        </div>
+        <div class="carousel-item">
+          <img src="static/images/trompe/Ships.jpg" alt="Ships asea" title="Ships in the collosium">
+        </div>
+        <div class="carousel-item">
+          <img src="static/images/trompe/puzzlepieces.jpg" alt="Puzzle pieces" title="Puzzle pieces that don't fit.">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carousel-impossible" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel-impossible" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>  
+
+    <hr style="border:1px solid ;">
+  </div>
+  <div id="puzzles" class="contentDiv">
+    <hr style="border:1px solid ;">
+    <h3 align="center"><i class="fa fa-puzzle-piece" aria-hidden="true"></i> Puzzles</h3>
+    <div class="puzzles">
+      <img src="static/images/puzzles/puzzle.JPG" alt="A geometric puzzle" title="Why is there a hole after rearranging the pieces?"/>
+    </div>
+    <div class="puzzles">
+      <img src="static/images/puzzles/11faces.jpg" alt="How many faces can you find?" title="Can you find all 11 faces?"/>
+    </div>
     <hr style="border:1px solid ;">
   </div>
   <div id="illusions" class="contentDiv">
     <hr style="border:1px solid;">
     <h3 align="center"><i class="fa fa-book" aria-hidden="true"></i> Illusions</h3>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carousel-illusions" class="carousel slide" data-ride="carousel">
+
       <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carousel-illusions" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-illusions" data-slide-to="1"></li>
+        <li data-target="#carousel-illusions" data-slide-to="2"></li>
+        <li data-target="#carousel-illusions" data-slide-to="3"></li>
+        <li data-target="#carousel-illusions" data-slide-to="4"></li>
+        <li data-target="#carousel-illusions" data-slide-to="5"></li>
+        <li data-target="#carousel-illusions" data-slide-to="6"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="static/images/BlueParallelLines.jpg" alt="Blue Parallel Lines">
+          <img src="static/images/illusions/BlueParallelLines.jpg" alt="Blue Parallel Lines" title="Yes, the blue lines are parallel.">
         </div>
         <div class="carousel-item">
-          <img src="static/images/RollingBall.jpg" alt="Rolling Ball">
+          <img src="static/images/illusions/RollingBall.jpg" alt="Rolling Ball" title="No, the ball is not really rolling.">
+        </div>
+        <div class="carousel-item">
+          <img src="static/images/illusions/concentric circles.jpg" alt="Concentric circles" title="There are four concentric circles!">
+        </div>
+        <div class="carousel-item">
+          <img src="static/images/illusions/lines.jpg" alt="Horizontal parallel lines" title="Another version image of parallel horizontal lines.">
+        </div>
+        <div class="carousel-item">
+          <img src="static/images/illusions/wavy.jpg" alt="Wavy green field" title="Nothing is moving but don't get sea sick watching.">
+        </div>
+        <div class="carousel-item">
+          <img src="static/images/illusions/spinningdisks.gif" alt="Green spinning disks" title="Why does it look like they are spinning when they aren't?">
+        </div>
+        <div class="carousel-item">
+          <img src="static/images/illusions/bluedots.jpg" alt="Blue dots?" title="It looks like there are blue dots at the intersections...">
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <a class="carousel-control-prev" href="#carousel-illusions" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <a class="carousel-control-next" href="#carousel-illusions" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
     </div>  
+    <hr style="border:1px solid;">
+  </div>
+  <div id="images" class="contentDiv">
+    <hr style="border:1px solid;">
+    <h3 align="center"><i class="fa fa-image aria-hidden="true"></i> Images</h3>
+    <div id="carousel-images" class="carousel slide" data-ride="carousel">
+
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-images" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-images" data-slide-to="1"></li>
+        <li data-target="#carousel-images" data-slide-to="2"></li>
+        <li data-target="#carousel-images" data-slide-to="3"></li>
+        <li data-target="#carousel-images" data-slide-to="4"></li>
+        <li data-target="#carousel-images" data-slide-to="5"></li>
+        <li data-target="#carousel-images" data-slide-to="6"></li>
+        <li data-target="#carousel-images" data-slide-to="7"></li>
+        <li data-target="#carousel-images" data-slide-to="8"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="static/images/WhatIsIt/2woman.jpg" alt="Two women" title="Young or old or both?">
+        </div>
+        <div class="carousel-item">
+          <img src="static/images/WhatIsIt/deer.bmp" alt="Deer in the forest" title="Deer in the forest.">
+        </div>
+        <div class="carousel-item">
+          <img src="static/images/WhatIsIt/horn_player.jpg" alt="Sax woman" title="Some like it hot!">
+        </div>
+        <div class="carousel-item">
+          <img src="static/images/WhatIsIt/horses.jpg" alt="Paints in the snow" title="Paints in the snow.">
+        </div>
+        <div class="carousel-item">
+          <img src="static/images/WhatIsIt/laundry.jpg" alt="Out to dry" title="Laundry Lady.">
+        </div>
+        <div class="carousel-item">
+          <img src="static/images/WhatIsIt/oldpeople.jpg" alt="Two faces" title="What do you see in this picture?">
+        </div>
+        <div class="carousel-item">
+          <img src="static/images/WhatIsIt/rotation.jpg" alt="What's the difference" title="These differ only by a rotation!">
+        </div>
+        <div class="carousel-item">
+          <img src="static/images/WhatIsIt/two_faces.jpg" alt="How many faces do you see?" title="How many faces do you see?">
+        </div>
+        <div class="carousel-item">
+          <img src="static/images/WhatIsIt/waterfall.bmp" alt="Waterfall?" title="Waterfall?">
+        </div>
+        <div class="carousel-item">
+          <img src="static/images/WhatIsIt/houses.jpg" alt="Audience?" title="Audience?">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carousel-images" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel-images" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>  
+
     <hr style="border:1px solid;">
   </div>
   <div id="photos" class="contentDiv">
@@ -115,6 +243,7 @@
     <ul><li>TBP</li></ul>
     <hr style="border:1px solid;">
   </div>
+
 </div>
 </body>
 </html>
