@@ -23,8 +23,13 @@ Carousel styling for Illusions section
 
 .carousel-item {
 	text-align:center;
-	max-height: 400px;
 }
+
+.carousel-item img{
+	max-height: 400px;
+	max-width: 80%;
+}
+
 .carousel-indicator {
 	bottom:-60px;
 }
@@ -49,11 +54,10 @@ Carousel styling for Illusions section
 	text-align: center;
 }
 
-.puzzels img {
+.puzzles img {
 	width:100%;
 	height:auto;
 	max-width: 800px;
-
 }
 
 body {
