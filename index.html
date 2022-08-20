@@ -144,6 +144,23 @@
         identify an object efficiently by testing groups of objects rather than individual objects. 
         Efficiency is measured by the number of test used and <em>not</em> the implementation of the testing protocol.</aside> 
     </div>
+  </div>
+  <hr style="border:1px solid;">
+  <div class="puzzles">
+    <h3>Random Streaming Selection Algorithms</h3>
+    <p>You are given access to an enumeration of items and asked to choose one item at random. You have access to a random number generator but do not know
+      the number of items in the enumeration, can only sequentially access items, and can only store a single item in memory. 
+      How can you choose a random item?
+      Can you do it with far fewer calls to the random number generator than there are items in the enumeration?
+      What if you want to choose <em>k</em> items at random from an enumeration?
+    </p>
+    <aside> NB: These types of problems are often solved with <a href="https://en.wikipedia.org/wiki/Reservoir_sampling">Reservoir Sampling</a> algorithms. 
+      In the case of selecting a single item from an enumeration, we devloped a random streaming selection algorithm that uses the minimal possible
+      number of calls to a random number generator that is described in the following <a href="static\Attenuated_Geometric_Distribution.pdf">note</a>. 
+      The algorithm uses half the number of calls required by previous algorithms. 
+      In addition to a simple, optimal algorithm, we define a <em>natural</em> distribution that we call the <a href="static\Attenuated_Geometric_Distribution.pdf">attenuated geometric distribution</a>. </aside> 
+  </div>
+
     <hr style="border:1px solid;">
     <div class="puzzles">
       <img src="static/images/puzzles/11faces.jpg" alt="How many faces can you find?" title="Can you find all 11 faces?"/>
