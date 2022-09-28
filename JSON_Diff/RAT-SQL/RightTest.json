@@ -1,0 +1,9 @@
+{ 
+    "AppName": "GRAIL: JSON Tools",
+    "Description":"a JSON Differ",
+    "parameters":{
+      "HideDataTypes": "Hides the data types",
+      "InitialTab": "use value Viewer or value DiffViewer to select the initial tab"
+    },
+    "WebStack": ["MobX", "ReactJS"]
+}

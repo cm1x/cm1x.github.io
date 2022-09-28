@@ -1,0 +1,6 @@
+{  
+    "AppName": "GRAIL: JSON Tools",
+    "Description":"A JSON Viewer and",
+    "Example parameter usage": "<json-tool website>?HideDataTypes&InitialTab=Viewer",
+    "WebStack": ["MobX", "React"]
+}
